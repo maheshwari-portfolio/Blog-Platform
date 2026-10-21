@@ -22,6 +22,18 @@ header h1 {
     margin-bottom: 8px;
 }
 
+.auth-section {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 main {
     max-width: 900px;
     margin: 30px auto;
@@ -43,12 +55,15 @@ h2 {
 
 input,
 textarea {
+    display: block;
     width: 100%;
     padding: 12px;
     margin-bottom: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
+    background: white;
+    color: #333;
 }
 
 textarea {
