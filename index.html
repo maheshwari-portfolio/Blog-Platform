@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Platform with Comments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Blog Platform</h1>
+        <p>Share your thoughts with the world!</p>
+    </header>
+
+    <!-- REGISTER SECTION -->
+    <section class="auth-section">
+        <h2>Create an Account</h2>
+
+        <input
+            type="text"
+            id="regName"
+            placeholder="Your Name"
+        >
+
+        <input
+            type="email"
+            id="regEmail"
+            placeholder="Your Email"
+        >
+
+        <input
+            type="password"
+            id="regPassword"
+            placeholder="Create Password (minimum 6 characters)"
+        >
+
+        <button id="registerBtn">Register</button>
+        <p id="registerMessage"></p>
+    </section>
+
+    <!-- LOGIN SECTION -->
+    <section class="auth-section">
+        <h2>Login</h2>
+
+        <input
+            type="email"
+            id="loginEmail"
+            placeholder="Enter Your Email"
+        >
+
+        <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter Your Password"
+        >
+
+        <button id="loginBtn">Login</button>
+        <p id="loginMessage"></p>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <main>
+
+        <section class="create-blog">
+            <h2>Create a Blog</h2>
+
+            <input
+                type="text"
+                id="author"
+                placeholder="Your Name"
+            >
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Blog Title"
+            >
+
+            <textarea
+                id="content"
+                placeholder="Write your blog here..."
+            ></textarea>
+
+            <button id="publishBtn">Publish Blog</button>
+        </section>
+
+        <!-- LATEST BLOGS -->
+        <section class="blogs-section">
+            <h2>Latest Blogs</h2>
+            <div id="blogsList"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
